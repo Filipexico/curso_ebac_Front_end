@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Arial, sans-serif;
+}
+
+header {
+    background-color: #2D2D2D;
+}
+
+.container {
+    width: 100%;
+}
+
+div.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    color: #fff;
+}
+
+.topo {
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family: Anybody;
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-hamburguer{
+    width: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #2b82de;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.material-symbols-outlined {
+    color: #2b82de;
+    margin-right: 8px;
+}
+
+.menu {
+    min-width: 200px;
+    width: 60%;
+    max-width: 400px;
+    display: none;
+    position: fixed;
+    background-color: black;
+    color: #2b82de;
+    font-size: 0.75em;
+    font-weight: 700;
+    list-style: none;
+    height: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topo-menu, li {
+    margin: 0 20px;
+}
+
+
+.submenu {
+    color: #FFF;
+    font-weight: 400;
+    list-style: none;
+}
+
+.topo-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.topo-menu button {
+    color: #FFF;
+    background-color: black;
+    border: none;
+    padding: 8px 0;
+    font-weight: 900;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.menu > .line {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 8px 0;
+}
+
+.menu > li {
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+
+.submenu > li {
+    padding: 4px 0;
+}
+
+.ola {
+    display: flex;
+    align-items: center;
+}
+
+.sobre img, 
+.produtos img {
+    width: 100%;
+    margin: 24px 0;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+section h2 {
+    color: #2b82de;
+    font-weight: 900;
+}
+
+.line-section {
+    height: 1px;
+    width: 100%;
+    background-color: #2D2D2D;
+    margin: 4px 0;
+}
+
+section p {
+    color: #2D2D2D;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section h3 {
+    color: #2D2D2D;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+section button {
+    background-color: #2b82de;
+    color: #FFF;
+    border: none;
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+footer {
+    background-color: #2D2D2D;
+    color: #FFF;
+    text-align: center;
+    padding: 32px 0;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 641px){
+
+    h1 {
+        font-size: 1.58em;
+    }
+
+    .sobre {
+        display: flex;
+    }
+
+    .sobre img {
+        width: 60%;
+    }
+
+    .sobre h2, .sobre p {
+        margin-left: 32px;
+    }
+
+    .sobre h2 {
+        margin-top: 24px;
+    }
+
+    .sobre .line-section {
+        height: 1px;
+        width: 90%;
+        background-color: #2D2D2D;
+        margin: 16px 32px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+        row-gap: 4%;
+        margin-bottom: 64px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    section h3 {
+        font-size: 1.3em;
+    }
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .menu, section p {
+        font-size: 1em;
+    }
+
+    .topo-menu button {
+        font-size: 1em;
+    }
+
+    .sobre {
+        display: flex;
+    }
+
+    .sobre img {
+        width: 40%;
+    }
+
+    .sobre h2, .sobre p {
+        margin-left: 32px;
+    }
+
+    .sobre h2 {
+        margin-top: 24px;
+    }
+
+    .sobre .line-section {
+        height: 1px;
+        width: 95%;
+        background-color: #2D2D2D;
+        margin: 16px 32px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 22%);
+        column-gap: 4%;
+        row-gap: 4%;
+        margin-bottom: 64px;
+    }
+
+}
