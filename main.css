@@ -1,0 +1,17 @@
+.form {
+    width: 480px;
+    display: flex;
+}
+
+.container{
+    margin-top: 200px;
+}
+
+.button{
+    background-color: lightcoral;
+}
+
+footer{
+    text-align: center;
+    padding: 48px 0;
+}
