@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    margin-left: 25px;
+    
+
+}
+
+.nav-link{
+    color: #000;
+    color: #00000063;
+    transform: scale(1.05);
+    margin-right: 55px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.c-item {
+    height: 480px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(55%);
+
+}
+
+.main-title {
+    color: #444;
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.cards-wrapper {
+    column-gap: 15px;
+} 
+
+.pt-md-5 h2 {
+    color: #000000;
+    font-size: 40px;
+    font-family: noto sans;
+    
+}
