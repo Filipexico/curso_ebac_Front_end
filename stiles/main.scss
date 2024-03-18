@@ -1,0 +1,113 @@
+@import 'variaveis';
+@import 'mixins';
+@import 'reset';
+
+body {
+    background-color: $cor-fundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: $mobile) {
+        max-width: 80%;
+    }
+
+    @include for-tablet-landscape-up {
+        max-width: 80%;
+    }
+}
+
+header {
+    background-color: $cor-header;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; // adicionado para evitar cortar o texto
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+    margin-right: 8px; // adicionado espaço à direita
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    @include for-tablet-landscape-up {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+
+    @include for-phone-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .product-item {
+            width: 100%; // faz com que o item do produto ocupe 100% da largura
+        }
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, 23.5%);
+    }
+}
+
+.product-item img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: $cor-botao;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+    max-width: 100%; // limita a largura do botão
+
+    &:hover {
+        background-color: $cor-botao-hover;
+    }
+
+    @include for-phone-only {
+        width: 100%; // define a largura do botão para 100%
+    }
+}
