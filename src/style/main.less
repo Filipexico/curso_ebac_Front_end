@@ -1,0 +1,59 @@
+@import "variaveis.less";
+@import "footer.less";
+@import "header.less";
+@import "body.less";
+@import "mapas.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+
+@breakpointMobile: ~"(max-width: 767px)";
+
+@media @breakpointMobile {
+  header {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100%; /* Adicione uma largura máxima para o container */
+  }
+
+  body {
+    background-color: #colors[background-color];
+    width: 100%;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2); /* Define duas colunas */
+    height: auto;
+    width: 100%;
+    align-items: flex-start; /* Alinha os itens no início do eixo transversal */
+    justify-content: flex-start;
+  }
+
+  .product-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-item img {
+    width: 200px;
+    height: auto;
+  }
+}
